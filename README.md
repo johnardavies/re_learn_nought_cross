@@ -10,7 +10,7 @@ The code is talked through in more detail in this post [here](https://johnardavi
   - **game_network.py** specifies the network that estimates the value function
   - **optimising_network.py** adjusts the network weights to satisfy value function condition 
   - **chart_funcs.py** tracks game progress and charts it
-  - **learn_game.py** imports all the scripts and runs the training loop that plays the game and trains the network
+  - **game_learn.py** imports all the scripts and runs the training loop that plays the game and trains the network
 
 ### To run the example:
 
