@@ -16,8 +16,8 @@ Create and activate virtual environment, here called pytorch_env and install the
 $ python -m  venv relearn_env && source relearn_env/bin/activate &&  pip install -r requirements.txt
 ```
 ### 3.  Train the network to play the game
-cd into thr project directory and run the below: This will output the metrics on how the network is playing the game
+cd into the project directory and run the below: 
 ```
 (relearn_env) $ python game_learn.py
 ```
-This will output the metrics on how the network is playing the game
+This will output the metrics on how the network is playing the game.
