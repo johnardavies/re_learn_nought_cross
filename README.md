@@ -19,7 +19,7 @@ The code is talked through in more detail in this post [here](https://johnardavi
 $ git clone https://github.com/johnardavies/re_learn_nought_cross
 ```
 ### 2.  Install the project dependencies
-Create and activate virtual environment, here called pytorch_env and install the requirements:
+Create and activate virtual environment, here called relearn_env and install the requirements:
 ```
 $ python -m  venv relearn_env && source relearn_env/bin/activate &&  pip install -r requirements.txt
 ```
