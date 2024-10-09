@@ -1,6 +1,7 @@
 import numpy as np
 import config as config
 
+
 class GameBoard:
     """Class that keeps track of board positions"""
 
@@ -62,7 +63,7 @@ class PersonScores:
         )
 
 
-def assign_scores(values, config):
+def assign_rewards(values, config):
     """Function that assigns rewards to the players based on the highest score"""
     if 3 in values:
         score = config.reward_scores["three_score"]
@@ -72,7 +73,8 @@ def assign_scores(values, config):
         score = config.reward_scores["one_score"]
     return score
 
-def calculate_scores(scores_metrics, player):
+
+def calculate_rewards(scores_metrics, player):
     """Function that calculates the rewards for the players given a proposed move and the state of the board"""
 
     # Get the scores for player 1 and player 2
@@ -80,9 +82,9 @@ def calculate_scores(scores_metrics, player):
     player_2_scores = [t[1] for t in scores_metrics]
 
     if player == "player_1":
-        reward = assign_scores(player_1_scores, config)
+        reward = assign_rewards(player_1_scores, config)
     if player == "player_2":
-        reward = assign_scores(player_2_scores, config)
+        reward = assign_rewards(player_2_scores, config)
 
     return reward
 
@@ -90,5 +92,3 @@ def calculate_scores(scores_metrics, player):
 def contains_three(tuples):
     """Function that checks if a tuple contains a 3"""
     return any(3 in t for t in tuples)
-
-
