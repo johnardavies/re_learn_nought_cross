@@ -77,9 +77,7 @@ def main(config):
                 logging.info("Player 1 moves")
 
                 # Get the Player 1 action given the state
-                player_1_action = select_action_model(game)
-
-                #        select_action(state, config)
+                player_1_action = select_action(state, config)
 
                 logging.info(player_1_action)
 
