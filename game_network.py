@@ -11,7 +11,6 @@ class ValueNet(nn.Module):
         super(ValueNet, self).__init__()
         # Embedding layer: 3 possible values, embedding size 100
         self.embedding = nn.Embedding(num_embeddings=3, embedding_dim=100)
-        self.conv1 = nn.Conv2d(1, 32, kernel_size=3, padding=1)
         # Example first layer after embedding
         # Flattening the 3x3 grid (which after embedding will be 3x3x4) to a vector of size 3*3*4 = 36
         self.fc1 = nn.Linear(3 * 3 * 100, 75)
